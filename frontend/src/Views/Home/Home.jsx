@@ -41,10 +41,7 @@ function Home() {
                             <br />
                         </div>
                         <div className="content">
-                            <a
-                                href="../PresentationPage&Shop/Shop/shop.html"
-                                className="buyNowBtn"
-                            >
+                            <a href="/reservation" className="buyNowBtn">
                                 BOOK NOW
                             </a>
                         </div>
@@ -60,10 +57,7 @@ function Home() {
                             <br />
                         </div>
                         <div className="content">
-                            <a
-                                href="../PresentationPage&Shop/Shop/shop.html"
-                                className="buyNowBtn"
-                            >
+                            <a href="/reservation" className="buyNowBtn">
                                 BOOK NOW
                             </a>
                         </div>

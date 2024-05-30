@@ -5,6 +5,8 @@
     box-sizing : border-box;
     font-family : "Poppins" , sans-serif;
     scroll-behavior: smooth;
+    text-decoration:none;
+	list-style:none;
     /* cursor: url('Main_Assets/Mouse_Pointer/mouse.png'), auto; */
 }
 

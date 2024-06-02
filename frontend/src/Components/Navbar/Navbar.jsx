@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import Logo from "../../Assests/Final_logo.png";
 
 function Navbar() {
     return (
@@ -9,20 +10,25 @@ function Navbar() {
                 <label for="check" class="checkbtn">
                     <i class="fas fa-bars"></i>
                 </label> */}
+                <a href="/">
+                    <img class="logo" src={Logo} alt="Cloud Kid logo" />
+                </a>
 
-                {/* <img class= "logo" src="Page_Navbar/logo.png" alt="Cloud Kid logo"> */}
-
-                <ul>
+                <ul class="menu">
                     <li>
                         <NavLink to="/" activeClassName="selected">
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/shop">SHOP</NavLink>
+                        <NavLink to="/shop" className="nav-link">
+                            SHOP
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about">ABOUT US</NavLink>
+                        <NavLink to="/about" className="nav-link">
+                            ABOUT US
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

@@ -8,11 +8,12 @@ body {
 
 .container {
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 h1 {
     font-size: 3em;
+    padding-top: 90px;
 }
 
 /* Video Background */

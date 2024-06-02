@@ -5,18 +5,25 @@
 	color: black;
 }
 
+.menu li a.active {
+	background-color: #ffffff;
+	color: black;
+  }
 
 nav{
 	background-color:#00000086;
 	height:80px;
 	width:100%;
 	overflow: hidden;
+	position: fixed;
+	z-index: 100;
+	transition: all 0.4s ease-out;
 }
 .logo{
 	line-height:80px;
-	padding:0 20px;
-	width:150px;
-	padding-top:10px;
+	padding:7px 20px;
+	width:108px;
+	margin-left: 20px;
 }
 
 nav ul{

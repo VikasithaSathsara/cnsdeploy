@@ -1,13 +1,13 @@
 import "./Reservation.css";
-import bgvideo2 from "../../Assests/bgvideo.mp4";
+import bgvideo3 from "../../Assests/GymVideo.mp4";
 
-function Reservation() {
+function GymReservation() {
     return (
         <div>
             <div class="center-box">
                 <div class="container">
                     <video
-                        src={bgvideo2}
+                        src={bgvideo3}
                         id="booking-bgvideo"
                         autoPlay
                         muted
@@ -25,7 +25,7 @@ function Reservation() {
                                     <input
                                         class="form-control"
                                         type="text"
-                                        placeholder="Country, ZIP, city..."
+                                        placeholder="Name"
                                     />{" "}
                                     <span class="form-label">Destination</span>{" "}
                                 </div>
@@ -97,4 +97,4 @@ function Reservation() {
     );
 }
 
-export default Reservation;
+export default GymReservation;

@@ -12,7 +12,7 @@ function Fotter() {
                 </div>
 
                 <ul class="social_icon">
-                    <li>
+                    {/* <li>
                         <a href="../Additional_Content_Page/additionalContent.html">
                             <i class="fa-solid fa-cube"></i>
                         </a>
@@ -22,40 +22,20 @@ function Fotter() {
                         id="additionalC"
                     >
                         Additional Content
-                    </a>
+                    </a> */}
                 </ul>
                 <ul class="menu">
-                    <li>
+                    {/* <li>
                         <a
                             href="../PresentationPage&Shop/Page_Editor/ishan.html"
                             id="ishan"
                         >
                             Ishan
                         </a>
-                    </li>
-                    <li>
-                        <a
-                            href="../QueryForm&Navigation/page_editor/page_editor.html"
-                            id="thushini"
-                        >
-                            Thushini
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../AboutUs&Quiz/gihan.html" id="gihan">
-                            Gihan
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="../Sitemap&Gallery/pageeditor_savinthie.html"
-                            id="savinthie"
-                        >
-                            Savinthie
-                        </a>
-                    </li>
+                    </li> */}
+                    
                 </ul>
-                <p>© 2022 CLOUD KID | All Rights Reserved</p>
+                <p>© 2024 C&S | All Rights Reserved</p>
             </footer>
         </div>
     );

@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./Views/Home/Home";
 import Shop from "./Views/Shop/Shop";
 import Reservation from "./Views/Reservation/Reservation";
+import AboutUs from './Views/AboutUs/AboutUs';
 
 import {
   Route,
@@ -38,6 +39,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
         <Route path="reservation" element={<Reservation />} />
+        <Route path="about" element={<AboutUs />} />
 
       </Route>
     </>

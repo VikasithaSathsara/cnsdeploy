@@ -8,11 +8,11 @@ body {
 
 .container {
     text-align: center;
-    /* margin-top: 20px; */
+    padding-top: 20px;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     padding-top: 90px;
 }
 

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./App.css";
 import Home from "./Views/Home/Home";
-import Shop from "./Views/Shop/Shop";
+import Gallery from "./Views/Gallery/Gallery";
 import AboutUs from './Views/AboutUs/AboutUs';
 
 import {
@@ -38,7 +38,7 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
-        <Route path="shop" element={<Shop />} />
+        <Route path="gallery" element={<Gallery />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="courtreservation" element={<CourtReservation />} />
         <Route path="gymreservation" element={<GymReservation />} />

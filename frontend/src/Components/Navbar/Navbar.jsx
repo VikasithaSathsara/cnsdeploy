@@ -6,10 +6,6 @@ function Navbar() {
     return (
         <div>
             <nav>
-                {/* <input type="checkbox" id="check" />
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label> */}
                 <a href="/">
                     <img class="logo" src={Logo} alt="Cloud Kid logo" />
                 </a>
@@ -17,16 +13,16 @@ function Navbar() {
                 <ul class="menu">
                     <li>
                         <NavLink to="/" activeClassName="selected">
-                            Home
+                            HOME
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/shop" className="nav-link">
-                            SHOP
+                        <NavLink to="/gallery" activeClassName="selected">
+                            GALLERY
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" className="nav-link">
+                        <NavLink to="/about" activeClassName="selected">
                             ABOUT US
                         </NavLink>
                     </li>

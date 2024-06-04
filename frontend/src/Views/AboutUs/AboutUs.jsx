@@ -21,7 +21,7 @@ const AboutUs = () => {
             <div className="content-container">
                 <div className="container">
                     <h1>
-                        <u>Our Director Board</u>
+                        <u>OUR DIRECTER BOARD</u>
                     </h1>
                 </div>
 

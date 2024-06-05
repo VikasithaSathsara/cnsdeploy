@@ -3,10 +3,11 @@ import "./AboutUs.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Fotter from "../../Components/Fotter/Fotter";
 
-import ishanImage from "../../Assests/gym_img1.jpg";
-import thushiniImage from "../../Assests/OIP.jpg";
-import gihanImage from "../../Assests/Shop.jpg";
-import savinthieImage from "../../Assests/R.jpg";
+import manoharaImage from "../../Assests/gym_img1.jpg";
+import jayaruwanImage from "../../Assests/OIP.jpg";
+import trimavithanaImage from "../../Assests/Shop.jpg";
+import manmithaImage from "../../Assests/R.jpg";
+import shanukaImage from "../../Assests/R.jpg";
 import aboutVideo from "../../Assests/about.mp4";
 
 const AboutUs = () => {
@@ -29,7 +30,7 @@ const AboutUs = () => {
                     <div className="box">
                         <div className="imgBx">
                             <img
-                                src={ishanImage}
+                                src={manoharaImage}
                                 alt="Director : Mr. Manohara"
                             />
                         </div>
@@ -59,7 +60,7 @@ const AboutUs = () => {
                     <div className="box">
                         <div className="imgBx">
                             <img
-                                src={thushiniImage}
+                                src={jayaruwanImage}
                                 alt="Director : Mr. Jayaruwan"
                             />
                         </div>
@@ -89,7 +90,7 @@ const AboutUs = () => {
                     <div className="box">
                         <div className="imgBx">
                             <img
-                                src={gihanImage}
+                                src={trimavithanaImage}
                                 alt="Director : Mr. Trimavithana"
                             />
                         </div>
@@ -118,7 +119,7 @@ const AboutUs = () => {
 
                     <div className="box">
                         <div className="imgBx">
-                            <img src={savinthieImage} alt="Mr. Manmitha" />
+                            <img src={manmithaImage} alt="Mr. Manmitha" />
                         </div>
                         <div className="content">
                             <h2>
@@ -145,7 +146,7 @@ const AboutUs = () => {
 
                     <div className="box">
                         <div className="imgBx">
-                            <img src={thushiniImage} alt="Mr. Himsara" />
+                            <img src={shanukaImage} alt="Mr. Himsara" />
                         </div>
                         <div className="content">
                             <h2>

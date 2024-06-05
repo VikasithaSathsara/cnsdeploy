@@ -1,6 +1,7 @@
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
 import Logo from "../../Assests/Final_logo.png";
+
 
 function Navbar() {
     return (
@@ -25,6 +26,11 @@ function Navbar() {
                         <NavLink to="/about" activeClassName="selected">
                             ABOUT US
                         </NavLink>
+                    </li>
+                    <li>
+                        <Link to="/#contact-section" activeclassName="nav-link">
+                            Contact Us
+                        </Link>
                     </li>
                 </ul>
             </nav>

@@ -31,6 +31,8 @@ const Gallery = () => {
                 return "radio4";
             case "radio4":
                 return "radio1";
+            default:
+                return "radio1";
         }
     };
 

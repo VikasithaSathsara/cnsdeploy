@@ -1,3 +1,6 @@
+
+
+
 /* General Styles */
 body {
     margin: 0;
@@ -66,53 +69,8 @@ h1 {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.box::before, .box::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: 2px solid transparent;
-    box-sizing: border-box;
-    transition: border-color 0.3s, transform 0.3s;
-}
-
-.box:hover::before {
-    border-top-color: #7a23f2;
-    border-bottom-color: #7a23f2;
-    transform: scaleX(0);
-    animation: border-animation-horizontal 0.5s forwards;
-}
-
-.box:hover::after {
-    border-left-color: #7a23f2;
-    border-right-color: #7a23f2;
-    transform: scaleY(0);
-    animation: border-animation-vertical 0.5s forwards;
-}
-
-@keyframes border-animation-horizontal {
-    0% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-@keyframes border-animation-vertical {
-    0% {
-        transform: scaleY(0);
-    }
-    100% {
-        transform: scaleY(1);
-    }
-}
-
 .imgBx {
     position: relative;
-    padding-top: 2px;
     width: 100%;
     height: 300px;
 }
@@ -121,7 +79,6 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .content {
@@ -204,6 +161,9 @@ a {
 a:hover {
     color: #7a23f2;
 }
+
+
+
 
 footer .social_icon,
 footer .menu {
@@ -309,3 +269,4 @@ footer .wave#wave4 {
         background-position-x: 1000px;
     }
 }
+

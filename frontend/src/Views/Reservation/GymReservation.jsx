@@ -27,7 +27,7 @@ function GymReservation() {
                                         type="text"
                                         placeholder="Name"
                                     />{" "}
-                                    <span class="form-label">Destination</span>{" "}
+                                    <span class="form-label">Name</span>{" "}
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">

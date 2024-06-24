@@ -33,9 +33,10 @@ function Fotter() {
                             Ishan
                         </a>
                     </li> */}
-                    
                 </ul>
-                <p>© 2024 C&S | All Rights Reserved</p>
+                <p>
+                    © C&S Badminton Complex (PVT) Ltd 2024 | All Rights Reserved
+                </p>
             </footer>
         </div>
     );

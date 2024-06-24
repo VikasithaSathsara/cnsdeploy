@@ -2,12 +2,11 @@ import React from "react";
 import "./AboutUs.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Fotter from "../../Components/Fotter/Fotter";
-import manoharaImage from "../../Assests/gym_img1.jpg";
-import jayaruwanImage from "../../Assests/OIP.jpg";
-import trimavithanaImage from "../../Assests/Shop.jpg";
-import manmithaImage from "../../Assests/R.jpg";
-import shanukaImage from "../../Assests/R.jpg";
-
+import manoharaImage from "../../Assests/Dada.png";
+import jayaruwanImage from "../../Assests/Uncle.png";
+import trimavithanaImage from "../../Assests/Aunty.png";
+import manmithaImage from "../../Assests/MAlli.png";
+import shanukaImage from "../../Assests/Shanuka.png";
 import aboutVideo from "../../Assests/about.mp4";
 
 const AboutUs = () => {

@@ -35,10 +35,6 @@ const Gallery = () => {
                 return "radio5";
             case "radio5":
                 return "radio1";
-            // case "radio6":
-            //     return "radio1";
-            // case "radio7":
-            //     return "radio1";
         }
     };
 
@@ -82,20 +78,6 @@ const Gallery = () => {
                         checked={selectedSlide === "radio5"}
                         onChange={handleSlideChange}
                     />
-                    {/* <input
-                        type="radio"
-                        name="radio-btn"
-                        id="radio6"
-                        checked={selectedSlide === "radio6"}
-                        onChange={handleSlideChange}
-                    />
-                    <input
-                        type="radio"
-                        name="radio-btn"
-                        id="radio7"
-                        checked={selectedSlide === "radio7"}
-                        onChange={handleSlideChange}
-                    /> */}
 
                     <div class="slide slide1">
                         <img src={S1} alt="" />
@@ -115,12 +97,6 @@ const Gallery = () => {
                     <div class="slide slide5">
                         <img src={S5} alt="" />
                     </div>
-                    {/* <div class="slide slide6">
-                        <img src={S6} alt="" />
-                    </div>
-                    <div class="slide slide7">
-                        <img src={S7} alt="" />
-                    </div> */}
 
                     <div class="navigation-manual">
                         <label
@@ -148,16 +124,6 @@ const Gallery = () => {
                             class="manual-btn"
                             id="btn5"
                         ></label>
-                        {/* <label
-                            for="radio6"
-                            class="manual-btn"
-                            id="btn6"
-                        ></label>
-                        <label
-                            for="radio7"
-                            class="manual-btn"
-                            id="btn7"
-                        ></label> */}
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import img1 from "../../Assests/court.jpg";
 import img2 from "../../Assests/gym_img1.jpg";
 import img3 from "../../Assests/Shop.jpg";
-import bgvideo from "../../Assests/mainBgVideo.mov";
+import bgvideo from "../../Assests/bgvideo.mp4";
 import useScrollToContact from "../../Components/Navbar/Scroll";
 import "./Home.css";
 
@@ -47,7 +47,6 @@ function Home() {
         <div>
             <Navbar />
             <section>
-                {/* <img src={img1} id="nitendo" alt="Nintendo Switch" /> */}
                 <h2 id="text">
                     SMASHING DREAMS <br /> INTO REALITY
                 </h2>

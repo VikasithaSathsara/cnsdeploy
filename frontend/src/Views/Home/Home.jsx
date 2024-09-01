@@ -7,6 +7,7 @@ import img3 from "../../Assests/Shop.jpg";
 import bgvideo from "../../Assests/bgvideo.mp4";
 import useScrollToContact from "../../Components/Navbar/Scroll";
 import "./Home.css";
+import swal from "sweetalert";
 
 function Home() {
     const [email, setEmail] = useState("");
@@ -43,6 +44,15 @@ function Home() {
         }
     };
 
+    const handleBookNow = () => {
+        swal({
+            title: "SORRY",
+            text: "This Feature is under Constructions",
+            icon: "warning",
+            button: "OK",
+        });
+    };
+
     return (
         <div>
             <Navbar />
@@ -77,7 +87,7 @@ function Home() {
                             <br />
                         </div>
                         <div className="content">
-                            <a href="/courtreservation" className="buyNowBtn">
+                            <a className="buyNowBtn" onClick={handleBookNow}>
                                 BOOK NOW
                             </a>
                         </div>
@@ -89,12 +99,12 @@ function Home() {
                                 alt="Gymnasium"
                                 style={{ borderRadius: "10%" }}
                             />
-                            <h3>Gymnasium</h3>
+                            <h3>Our Facilities</h3>
                             <br />
                         </div>
                         <div className="content">
-                            <a href="/gymreservation" className="buyNowBtn">
-                                BOOK NOW
+                            <a href="facility" className="buyNowBtn">
+                                VIEW NOW
                             </a>
                         </div>
                     </div>
@@ -173,7 +183,7 @@ function Home() {
                 </form>
                 {popupVisible && <div className="popup">Message sent!</div>}
             </section>
-
+            <br />
             <Fotter />
         </div>
     );

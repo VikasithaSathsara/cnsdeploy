@@ -1,7 +1,6 @@
 import "./Navbar.css";
-import { NavLink , Link} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Logo from "../../Assests/Final_logo.png";
-
 
 function Navbar() {
     return (
@@ -15,6 +14,11 @@ function Navbar() {
                     <li>
                         <NavLink to="/" activeClassName="selected">
                             HOME
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/facility" activeClassName="selected">
+                            FACILITIES
                         </NavLink>
                     </li>
                     <li>

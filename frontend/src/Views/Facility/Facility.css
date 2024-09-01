@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+
+/* * {
+  transition: all 0.2s linear;
+}
+:root{
+  --h2:14px;
+  --h3:20px;
+  --des:16px;
+}
+
+body {
+  background-color: #00000efc;
+} */
+
+/* .controls{
+  display: flex;
+  padding: 100px 30px 10px 30px;
+  justify-content: space-between;
+  margin-bottom: 0;
+
+} */
+
+/* h1
+{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color:white;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+} */
+
+
+.ftopic
+{
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.facility-description
+{
+  padding: 1.7rem;
+  text-align: justify;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1em;
+}
+
+
+
+
+
+#container1 {
+  padding: 3rem 1rem;
+  margin-top: 30px;
+  font-family: "Nunito", sans-serif;
+}
+
+#container2 {
+  padding: 3rem 1rem;
+  margin-top: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+#products-container1, #products-container2 {
+  margin: auto;
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 19.8px;
+}
+
+.product {
+  text-align: center;
+  width: 320px;
+  height: 310px;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.product:hover {
+  outline: 4px solid #FF4057;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.product img {
+  height: 220px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.product h3{
+  font-size: var(--h3);
+  color: white;
+}
+h2 {
+  font-size: var(--h2);
+  color: white;
+}
+
+.image-container
+{
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px;
+}
+
+.description
+{
+  height: 370px;
+  color:white;
+  font-size: var(--des);
+  padding: 20px 5px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 100px;
+  overflow-y: hidden;
+}
+
+#image
+{
+  width: 600px;
+  height: 350px;
+  margin-left: 180px;
+}
+
+
+
+

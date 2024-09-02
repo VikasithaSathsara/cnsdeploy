@@ -1,3 +1,4 @@
+import React from "react";
 import "./Navbar.css";
 import { NavLink, Link } from "react-router-dom";
 import Logo from "../../Assests/Final_logo.png";
@@ -7,10 +8,16 @@ function Navbar() {
         <div>
             <nav>
                 <a href="/">
-                    <img class="logo" src={Logo} alt="Cloud Kid logo" />
+                    <img className="logo" src={Logo} alt="Cloud Kid logo" />
                 </a>
 
-                <ul class="menu">
+                {/* Hamburger menu icon */}
+                <input type="checkbox" id="check" />
+                <label htmlFor="check" className="checkbtn">
+                    <i className="fas fa-bars"></i>
+                </label>
+
+                <ul className="menu">
                     <li>
                         <NavLink to="/" activeClassName="selected">
                             HOME

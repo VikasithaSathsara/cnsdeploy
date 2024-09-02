@@ -88,36 +88,6 @@ const AboutUs = () => {
 
                     <div className="box">
                         <div className="imgBx">
-                            <img
-                                src={trimavithanaImage}
-                                alt="Director : Mr. Trimavithana"
-                            />
-                        </div>
-                        <div className="content">
-                            <h2>
-                                C W Trimavithana
-                                <br />
-                                <span>
-                                    Director
-                                    <br />
-                                    📱{" "}
-                                    <a href="tel:+94775131830">
-                                        +94 77 513 1830
-                                    </a>
-                                    <br />
-                                    📧{" "}
-                                    <a href="mailto:ctrimavithana1981@gmail.com">
-                                        ctrimavithana1981@gmail.com
-                                    </a>
-                                    <br />
-                                    📍 No.68/1G, Mahamudali Mawatha, Galle.
-                                </span>
-                            </h2>
-                        </div>
-                    </div>
-
-                    <div className="box">
-                        <div className="imgBx">
                             <img src={manmithaImage} alt="Mr. Manmitha" />
                         </div>
                         <div className="content">
@@ -169,8 +139,39 @@ const AboutUs = () => {
                             </h2>
                         </div>
                     </div>
+
+                    <div className="box">
+                        <div className="imgBx">
+                            <img
+                                src={trimavithanaImage}
+                                alt="Director : Mr. Trimavithana"
+                            />
+                        </div>
+                        <div className="content">
+                            <h2>
+                                C W Trimavithana
+                                <br />
+                                <span>
+                                    Director
+                                    <br />
+                                    📱{" "}
+                                    <a href="tel:+94775131830">
+                                        +94 77 513 1830
+                                    </a>
+                                    <br />
+                                    📧{" "}
+                                    <a href="mailto:ctrimavithana1981@gmail.com">
+                                        ctrimavithana1981@gmail.com
+                                    </a>
+                                    <br />
+                                    📍 No.68/1G, Mahamudali Mawatha, Galle.
+                                </span>
+                            </h2>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
             <Fotter />
         </div>
     );

@@ -8,6 +8,8 @@ import bgvideo from "../../Assests/bgvideo.mp4";
 import useScrollToContact from "../../Components/Navbar/Scroll";
 import "./Home.css";
 import swal from "sweetalert";
+import emailjs from "emailjs-com";
+
 
 function Home() {
     const [email, setEmail] = useState("");
@@ -34,11 +36,36 @@ function Home() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
+    
         if (validateEmail(email)) {
-            setPopupVisible(true);
-            setTimeout(() => {
-                setPopupVisible(false);
-            }, 2000); // Hide popup after 2 seconds
+            const formData = {
+                name: e.target.name.value,
+                email: email,
+                message: e.target.message.value,
+            };
+    
+            emailjs.send(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                formData,
+                process.env.REACT_APP_EMAILJS_USER_ID
+            )
+            .then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    swal("Success", "Your message has been sent!", "success");
+                    setPopupVisible(true);
+                    setTimeout(() => setPopupVisible(false), 2000);
+                },
+                (error) => {
+                    console.log("FAILED...", error);
+                    swal("Error", "There was an error sending your message.", "error");
+                }
+            );
+    
+            // Reset form fields
+            e.target.reset();
+            setEmail(""); 
         } else {
             setEmailError("Invalid email address!");
         }

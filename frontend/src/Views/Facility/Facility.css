@@ -1,26 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
 
-/* * {
-  transition: all 0.2s linear;
-}
-:root{
-  --h2:14px;
-  --h3:20px;
-  --des:16px;
-}
-
-body {
-  background-color: #00000efc;
-} */
-
-/* .controls{
-  display: flex;
-  padding: 100px 30px 10px 30px;
-  justify-content: space-between;
-  margin-bottom: 0;
-
-} */
-
 /* h1
 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -46,10 +25,6 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 1.1em;
 }
-
-
-
-
 
 #container1 {
   padding: 3rem 1rem;

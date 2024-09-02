@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Fotter from "../../Components/Fotter/Fotter";
 import Navbar from "../../Components/Navbar/Navbar";
 import img1 from "../../Assests/court.jpg";
-import img2 from "../../Assests/gym_img1.jpg";
+import img2 from "../../Assests/facilityImage.jpg";
 import img3 from "../../Assests/Shop.jpg";
 import bgvideo from "../../Assests/bgvideo.mp4";
 import useScrollToContact from "../../Components/Navbar/Scroll";
@@ -96,7 +96,7 @@ function Home() {
                         <div className="imgBx">
                             <img
                                 src={img2}
-                                alt="Gymnasium"
+                                alt="Facilities"
                                 style={{ borderRadius: "10%" }}
                             />
                             <h3>Our Facilities</h3>

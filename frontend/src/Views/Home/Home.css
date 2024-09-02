@@ -60,6 +60,7 @@ section img#controller
     z-index: 11;   
     top: 15vh;
     text-align: center;
+    margin-top: 80px;
 }
 
 #explore
@@ -74,6 +75,7 @@ section img#controller
     transform: translateY(150px);
     transition: 0.5s;
     z-index: 9;
+    margin-bottom: 80px;
     
 }
 

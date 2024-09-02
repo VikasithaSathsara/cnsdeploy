@@ -26,7 +26,7 @@ function Facility() {
             <div class="image-container">
                 <img src={badmintonhub} alt="uncharted" id="image" />
                 <div class="description" id="gameDescription">
-                    <h3 className="ftopic">C & S Badminton Hub</h3>
+                    <h3 className="ftopic">C&S Badminton Hub</h3>
                     <p className="facility-description">
                         At the C & S Badminton Equipment Shop, we pride
                         ourselves on being your one-stop destination for all

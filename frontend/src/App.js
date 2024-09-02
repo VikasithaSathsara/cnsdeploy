@@ -13,6 +13,7 @@ import {
   Outlet,
   useLocation,
 } from "react-router-dom";
+import ContactUs from "./Views/ContactUs/ContactUs";
 
 
 
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
         <Route path="gallery" element={<Gallery />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="facility" element={<Facility />} />
+        <Route path="contact" element={<ContactUs/>} />
       </Route>
     </>
   )

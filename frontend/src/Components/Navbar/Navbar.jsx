@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import Logo from "../../Assests/Final_logo.png";
 
 function Navbar() {
@@ -39,9 +39,9 @@ function Navbar() {
                         </NavLink>
                     </li>
                     <li>
-                        <Link to="/#contact-section" activeclassName="nav-link">
-                            Contact Us
-                        </Link>
+                        <NavLink to="/contact" activeClassName="selected">
+                            CONTACT US
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

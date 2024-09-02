@@ -67,7 +67,7 @@ function ContactUs() {
         <div>
             <Navbar />
             <section id="contact-section">
-                <h2>Contact</h2>
+                <h2>Contact Us</h2>
                 <div className="contact-details">
                     <p>Email: cnsb233@gmail.com</p>
                     <p>Telephone: +94-777-983264</p>

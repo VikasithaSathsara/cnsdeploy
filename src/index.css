@@ -1,24 +1,21 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing : border-box;
-    font-family : "Poppins" , sans-serif;
-    scroll-behavior: smooth;
-    text-decoration:none;
-	list-style:none;
-    /* cursor: url('Main_Assets/Mouse_Pointer/mouse.png'), auto; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+  /* cursor: url('Main_Assets/Mouse_Pointer/mouse.png'), auto; */
 }
 
-body
-{
-    min-height: 115vh;
-    overflow-x: hidden;
-    background: linear-gradient(#3a0086,#000000);
+body {
+  min-height: 115vh;
+  overflow-x: hidden;
+  background: linear-gradient(#3a0086, #000000);
 }
-
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

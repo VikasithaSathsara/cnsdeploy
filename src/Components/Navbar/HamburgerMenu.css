@@ -1,0 +1,56 @@
+.hamburger-button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hamburger-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hamburger-line {
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  transition: transform 0.5s ease-in-out, top 0.5s ease-in-out,
+    bottom 0.5s ease-in-out;
+}
+
+.hamburger-line.top {
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hamburger-line.middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hamburger-line.bottom {
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hamburger-button.active .hamburger-line.top {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger-button.active .hamburger-line.middle {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.hamburger-button.active .hamburger-line.bottom {
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+}

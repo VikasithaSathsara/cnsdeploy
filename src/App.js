@@ -13,13 +13,17 @@ import {
   RouterProvider,
   useLocation,
 } from "react-router-dom";
+import Fotter from "./Components/Fotter/Fotter";
+import Navbar from "./Components/Navbar/Navbar";
 import ContactUs from "./Views/ContactUs/ContactUs";
 
 function RootLayout() {
   return (
     <>
+      <Navbar />
       <ScrollToTop />
       <Outlet />
+      <Fotter />
     </>
   );
 }

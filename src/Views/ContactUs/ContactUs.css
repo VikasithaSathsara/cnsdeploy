@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
 
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background: linear-gradient(#111111, #3a0086);
-}
-
 #contact-section {
   display: flex;
   flex-direction: column;

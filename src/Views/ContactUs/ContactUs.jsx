@@ -63,26 +63,17 @@ function ContactUs() {
   };
 
   return (
-    <div>
-      <section id="contact-section">
+    <div id="contact-section">
+      <div className="section" id="contact-details">
         <h2>Contact Us</h2>
         <div className="contact-details">
-          <p>Email: cnsb233@gmail.com</p>
+          <p><br></br><br></br>Email: cnsb233@gmail.com</p>
           <p>Telephone: +94-777-983264</p>
           <p>Address: No:38/2, Godaduwa Rd, Kapuhempola, Akmeemana, Galle.</p>
         </div>
-        <div className="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31739.826663287346!2d80.2223134347656!3d6.066041600000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae171001b952ce9%3A0xcce4b3f47bbdf7e3!2sC%20%26%20S%20Badminton%20Complex%20(PVT)%20Ltd!5e0!3m2!1sen!2slk!4v1717599934147!5m2!1sen!2slk"
-            width="600"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="C&S Badminton Complex Map"
-          ></iframe>
-        </div>
+      </div>
+
+      <div className="section" id="contact-form">
         <form className="contact-form" onSubmit={handleFormSubmit}>
           <label htmlFor="name">Name:</label>
           <input
@@ -115,8 +106,22 @@ function ContactUs() {
 
           <button type="submit">Send</button>
         </form>
-        {popupVisible}
-      </section>
+      </div>
+
+      <div className="section" id="map-section">
+        <div className="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31739.826663287346!2d80.2223134347656!3d6.066041600000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae171001b952ce9%3A0xcce4b3f47bbdf7e3!2sC%20%26%20S%20Badminton%20Complex%20(PVT)%20Ltd!5e0!3m2!1sen!2slk!4v1717599934147!5m2!1sen!2slk"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="C&S Badminton Complex Map"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 }

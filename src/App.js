@@ -4,7 +4,6 @@ import AboutUs from "./Views/AboutUs/AboutUs";
 import Facility from "./Views/Facility/Facility";
 import Gallery from "./Views/Gallery/Gallery";
 import Home from "./Views/Home/Home";
-
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -13,7 +12,6 @@ import {
   RouterProvider,
   useLocation,
 } from "react-router-dom";
-import Fotter from "./Components/Fotter/Fotter";
 import Navbar from "./Components/Navbar/Navbar";
 import ContactUs from "./Views/ContactUs/ContactUs";
 
@@ -23,7 +21,6 @@ function RootLayout() {
       <Navbar />
       <ScrollToTop />
       <Outlet />
-      <Fotter />
     </>
   );
 }

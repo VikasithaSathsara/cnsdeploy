@@ -6,6 +6,7 @@ import img2 from "../../Assests/facilityImage.jpg";
 import img3 from "../../Assests/Shop.jpg";
 import useScrollToContact from "../../Components/Navbar/Scroll";
 import Fotter from "../../Components/Fotter/Fotter";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Home.css";
 
 function Home() {
@@ -26,9 +27,9 @@ function Home() {
                 <h2 id="text">
                     SMASHING DREAMS <br /> INTO REALITY
                 </h2>
-                <a href="#sec" id="explore">
+                <Link smooth to="#sec" id="explore">
                     Explore
-                </a>
+                </Link>
             </section>
 
             <div className="sec" id="sec">
@@ -69,9 +70,9 @@ function Home() {
                             <br />
                         </div>
                         <div className="content">
-                            <a href="facility" className="buyNowBtn">
+                            <Link to="/facility" className="buyNowBtn">
                                 VIEW NOW
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="card">
@@ -85,9 +86,9 @@ function Home() {
                             <br />
                         </div>
                         <div className="content">
-                            <a href="/gallery" className="buyNowBtn">
+                            <Link to="/gallery" className="buyNowBtn">
                                 VIEW NOW
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

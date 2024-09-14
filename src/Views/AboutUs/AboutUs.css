@@ -300,15 +300,27 @@ footer .wave#wave4 {
         margin: 10px 0;
     }
 
+    /* For tablets (max-width 768px) */
     .team-container {
-        flex-direction: column;
-        padding: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two boxes per row */
+        gap: 20px;
+        padding: 20px;
         margin-bottom: 50px;
     }
 
     .box {
-        width: 90%;
+        width: 100%; /* Full width of each grid column */
         height: auto;
+    }
+
+    .imgBx {
+        height: 300px; /* Adjust image container height */
+    }
+
+    .imgBx img {
+        height: 100%; /* Ensure image fills the container */
+        object-fit: cover; /* Maintain aspect ratio */
     }
 
     .content-container {
@@ -323,14 +335,33 @@ footer .wave#wave4 {
         padding-top: 50px;
     }
 
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two boxes per row */
+        gap: 15px; /* Adjust the gap between the items */
+        padding: 0 15px; /* Add padding on both sides */
+        justify-content: center; /* Center the grid content */
+        margin-bottom: 100px;
+    }
+    
+    
     .box {
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
+        width: 190px; /* Ensure each box takes the full width of its grid column */
+        height: 330px;
+        margin: 0; /* Remove any extra margins that might add extra space */
+    }
+
+    .imgBx {
+        height: 200px; /* Further reduce image height */
+    }
+
+    .imgBx img {
+        height: 100%; /* Ensure image resizes properly */
+        object-fit: cover;
     }
 
     .content h2 {
-        font-size: 1.2em;
+        font-size: 0.6em;
     }
 
     .content span {
@@ -363,5 +394,5 @@ footer .wave#wave4 {
 
     footer {
         padding: 30px 10px;
-    }
+}
 }

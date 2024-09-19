@@ -73,9 +73,11 @@ function ContactUs() {
 
     return (
         <div>
-            <div id="contact-section">
+            <div className="container">
+                <h1>
+                    <u>Contact Us</u>
+                </h1>
                 <div className="section" id="contact-details">
-                    <h2>Contact Us</h2>
                     <div className="contact-details">
                         <p>
                             <br></br>
@@ -91,7 +93,7 @@ function ContactUs() {
 
                 <div className="section" id="contact-form">
                     <form className="contact-form" onSubmit={handleFormSubmit}>
-                        <label htmlFor="name">Name:</label>
+                        <label htmlFor="name">Name :</label>
                         <input
                             type="text"
                             id="name"
@@ -100,7 +102,7 @@ function ContactUs() {
                             placeholder="Your Name (John Doe)"
                         />
 
-                        <label htmlFor="email">Email:</label>
+                        <label htmlFor="email">Email :</label>
                         <input
                             type="text"
                             id="email"
@@ -114,7 +116,7 @@ function ContactUs() {
                             <div className="error">{emailError}</div>
                         )}
 
-                        <label htmlFor="message">Message:</label>
+                        <label htmlFor="message">Message :</label>
                         <textarea
                             id="message"
                             name="message"
@@ -122,23 +124,24 @@ function ContactUs() {
                             placeholder="Type your message here"
                         ></textarea>
 
-                        <button type="submit">Send</button>
+                        <button type="submit" style={{ margin: "auto" }}>
+                            Send
+                        </button>
                     </form>
                 </div>
-
-                <div className="section" id="map-section">
-                    <div className="map-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31739.826663287346!2d80.2223134347656!3d6.066041600000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae171001b952ce9%3A0xcce4b3f47bbdf7e3!2sC%20%26%20S%20Badminton%20Complex%20(PVT)%20Ltd!5e0!3m2!1sen!2slk!4v1717599934147!5m2!1sen!2slk"
-                            width="600"
-                            height="450"
-                            style={{ border: 0 }}
-                            allowFullScreen=""
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            title="C&S Badminton Complex Map"
-                        ></iframe>
-                    </div>
+            </div>
+            <div className="section" id="map-section">
+                <div className="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31739.826663287346!2d80.2223134347656!3d6.066041600000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae171001b952ce9%3A0xcce4b3f47bbdf7e3!2sC%20%26%20S%20Badminton%20Complex%20(PVT)%20Ltd!5e0!3m2!1sen!2slk!4v1717599934147!5m2!1sen!2slk"
+                        width="600"
+                        height="450"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="C&S Badminton Complex Map"
+                    ></iframe>
                 </div>
             </div>
             <Fotter />

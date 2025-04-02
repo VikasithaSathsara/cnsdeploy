@@ -1,35 +1,77 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import swal from "sweetalert";
 import bgvideo from "../../Assests/bgvideo.mp4";
 import img1 from "../../Assests/court.jpg";
 import img2 from "../../Assests/facilityImage.jpg";
 import img3 from "../../Assests/Shop.jpg";
+import flyerImg from "../../Assests/tournamentFlyer.jpeg"; 
 import useScrollToContact from "../../Components/Navbar/Scroll";
 import Fotter from "../../Components/Fotter/Fotter";
-import { HashLink as Link } from "react-router-hash-link";
 import "./Home.css";
 
 function Home() {
     useScrollToContact();
 
+    /*Comment out from here to line number 46 to remove popup*/
+
+    const [showPopup, setShowPopup] = useState(false);
+
+    useEffect(() => {
+        // Check if the popup has already been displayed in the session
+        const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+
+        // If the popup hasn't been shown yet, display it and store it in sessionStorage
+        if (!popupDisplayed) {
+            setShowPopup(true);
+            sessionStorage.setItem("popupDisplayed", "true"); // Mark the popup as displayed
+        }
+    }, []);
+
     const handleBookNow = () => {
         swal({
             title: "SORRY",
-            text: "This Feature is under Constructions",
+            text: "This Feature is under Construction",
             icon: "warning",
             button: "OK",
         });
     };
 
+    const handleClosePopup = () => {
+        setShowPopup(false); // Close the popup
+    };
+
+    const handleViewMoreDetails = () => {
+        window.location.href = "https://www.facebook.com/people/C-S-Badminton-Complex-PVT-Ltd/61560580761181/"; // Adjust the route based on your actual page
+    };
+
     return (
         <div>
+
+            {/* Comment out from here to line number 66 to remove popup */}
+            
+            {showPopup && (
+                <div className="popup">
+                    <div className="popup-content">
+                        {/* Custom Close Button */}
+                        <button className="close-btn" onClick={handleClosePopup}>
+                            &times; {/* This is the "X" character for Close */}
+                        </button>
+                        
+                        <img src={flyerImg} alt="Badminton Tournament Flyer" />
+                        <div className="popup-buttons">
+                            <button onClick={handleViewMoreDetails}>View More Details</button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <section>
                 <h2 id="text">
                     SMASHING DREAMS <br /> INTO REALITY
                 </h2>
-                <Link smooth to="#sec" id="explore">
+                <a href="#sec" id="explore">
                     Explore
-                </Link>
+                </a>
             </section>
 
             <div className="sec" id="sec">
@@ -70,9 +112,9 @@ function Home() {
                             <br />
                         </div>
                         <div className="content">
-                            <Link to="/facility" className="buyNowBtn">
+                            <a href="facility" className="buyNowBtn">
                                 VIEW NOW
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="card">
@@ -86,9 +128,9 @@ function Home() {
                             <br />
                         </div>
                         <div className="content">
-                            <Link to="/gallery" className="buyNowBtn">
+                            <a href="/gallery" className="buyNowBtn">
                                 VIEW NOW
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

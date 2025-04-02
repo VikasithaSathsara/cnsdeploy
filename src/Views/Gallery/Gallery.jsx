@@ -36,9 +36,9 @@ function Gallery() {
       </div>
 
       <div className="container">
-        <h1>
+        {/* <h1>
           <u>GALLERY</u>
-        </h1>
+        </h1> */}
       </div>
       <div className="gallery-image">
         <div className="img-box" onClick={() => openModal(g1)}>

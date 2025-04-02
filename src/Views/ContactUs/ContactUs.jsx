@@ -74,9 +74,9 @@ function ContactUs() {
     return (
         <div>
             <div className="container">
-                <h1>
+                {/* <h1>
                     <u>Contact Us</u>
-                </h1>
+                </h1> */}
                 <div className="section" id="contact-details">
                     <div className="contact-details">
                         <p>

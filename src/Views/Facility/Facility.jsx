@@ -15,9 +15,9 @@ function Facility() {
                 </video>
             </div>
             <div className="container">
-                <h1>
+                {/* <h1>
                     <u>FACILITIES</u>
-                </h1>
+                </h1> */}
             </div>
             <br />
             <br />

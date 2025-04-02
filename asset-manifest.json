@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0360a66.css",
-    "main.js": "/static/js/main.9435fe25.js",
+    "main.css": "/static/css/main.2ba2ebd7.css",
+    "main.js": "/static/js/main.edffa1d1.js",
     "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
     "static/media/bgvideo1.mp4": "/static/media/bgvideo1.01b69631a9cb4f444308.mp4",
     "static/media/bgvideo.mp4": "/static/media/bgvideo.1e611154e69206663aae.mp4",
@@ -28,6 +28,7 @@
     "static/media/g12.jpg": "/static/media/g12.5140716cab6bbbd06c62.jpg",
     "static/media/g10.jpg": "/static/media/g10.7490df1f80f90cea207b.jpg",
     "static/media/badmintonhub.jpg": "/static/media/badmintonhub.c0a6ed2c29fc87942d32.jpg",
+    "static/media/tournamentFlyer.jpeg": "/static/media/tournamentFlyer.464b09ebe2990e49a9d7.jpeg",
     "static/media/g11.jpg": "/static/media/g11.e3440c9c940a3d071ac2.jpg",
     "static/media/g8.jpg": "/static/media/g8.8f69359eb2ebbc0ca681.jpg",
     "static/media/facilityImage.jpg": "/static/media/facilityImage.f9b2d5e165bc1ef3ddc9.jpg",
@@ -36,12 +37,12 @@
     "static/media/Shop.jpg": "/static/media/Shop.829798517a0bc430e557.jpg",
     "static/media/Final_logo.png": "/static/media/Final_logo.51ca53636c46461f118c.png",
     "index.html": "/index.html",
-    "main.d0360a66.css.map": "/static/css/main.d0360a66.css.map",
-    "main.9435fe25.js.map": "/static/js/main.9435fe25.js.map",
+    "main.2ba2ebd7.css.map": "/static/css/main.2ba2ebd7.css.map",
+    "main.edffa1d1.js.map": "/static/js/main.edffa1d1.js.map",
     "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0360a66.css",
-    "static/js/main.9435fe25.js"
+    "static/css/main.2ba2ebd7.css",
+    "static/js/main.edffa1d1.js"
   ]
 }

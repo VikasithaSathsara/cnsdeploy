@@ -4,10 +4,11 @@ import bgvideo from "../../Assests/bgvideo.mp4";
 import img1 from "../../Assests/court.jpg";
 import img2 from "../../Assests/facilityImage.jpg";
 import img3 from "../../Assests/Shop.jpg";
-import flyerImg from "../../Assests/tournamentFlyer.jpeg"; 
+import flyerImg from "../../Assests/tournamentFlyer.jpeg";
 import useScrollToContact from "../../Components/Navbar/Scroll";
 import Fotter from "../../Components/Fotter/Fotter";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
     useScrollToContact();
@@ -41,25 +42,30 @@ function Home() {
     };
 
     const handleViewMoreDetails = () => {
-        window.location.href = "https://www.facebook.com/people/C-S-Badminton-Complex-PVT-Ltd/61560580761181/"; // Adjust the route based on your actual page
+        window.location.href =
+            "https://www.facebook.com/people/C-S-Badminton-Complex-PVT-Ltd/61560580761181/"; // Adjust the route based on your actual page
     };
 
     return (
         <div>
-
             {/* Comment out from here to line number 66 to remove popup */}
-            
+
             {showPopup && (
                 <div className="popup">
                     <div className="popup-content">
                         {/* Custom Close Button */}
-                        <button className="close-btn" onClick={handleClosePopup}>
+                        <button
+                            className="close-btn"
+                            onClick={handleClosePopup}
+                        >
                             &times; {/* This is the "X" character for Close */}
                         </button>
-                        
+
                         <img src={flyerImg} alt="Badminton Tournament Flyer" />
                         <div className="popup-buttons">
-                            <button onClick={handleViewMoreDetails}>View More Details</button>
+                            <button onClick={handleViewMoreDetails}>
+                                View More Details
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -69,9 +75,16 @@ function Home() {
                 <h2 id="text">
                     SMASHING DREAMS <br /> INTO REALITY
                 </h2>
-                <a href="#sec" id="explore">
+                <button
+                    id="explore"
+                    onClick={() =>
+                        document
+                            .getElementById("sec")
+                            .scrollIntoView({ behavior: "smooth" })
+                    }
+                >
                     Explore
-                </a>
+                </button>
             </section>
 
             <div className="sec" id="sec">
@@ -112,9 +125,9 @@ function Home() {
                             <br />
                         </div>
                         <div className="content">
-                            <a href="facility" className="buyNowBtn">
+                            <Link to="/facility" className="buyNowBtn">
                                 VIEW NOW
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="card">
@@ -128,9 +141,9 @@ function Home() {
                             <br />
                         </div>
                         <div className="content">
-                            <a href="/gallery" className="buyNowBtn">
+                            <Link to="/gallery" className="buyNowBtn">
                                 VIEW NOW
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

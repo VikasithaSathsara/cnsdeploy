@@ -15,19 +15,39 @@ function Home() {
 
     /*Comment out from here to line number 46 to remove popup*/
 
-    const [showPopup, setShowPopup] = useState(false);
+    // const [showPopup, setShowPopup] = useState(false);
 
-    useEffect(() => {
-        // Check if the popup has already been displayed in the session
-        const popupDisplayed = sessionStorage.getItem("popupDisplayed");
+    // useEffect(() => {
+    //     // Check if the popup has already been displayed in the session
+    //     const popupDisplayed = sessionStorage.getItem("popupDisplayed");
 
-        // If the popup hasn't been shown yet, display it and store it in sessionStorage
-        if (!popupDisplayed) {
-            setShowPopup(true);
-            sessionStorage.setItem("popupDisplayed", "true"); // Mark the popup as displayed
-        }
-    }, []);
+    //     // If the popup hasn't been shown yet, display it and store it in sessionStorage
+    //     if (!popupDisplayed) {
+    //         setShowPopup(true);
+    //         sessionStorage.setItem("popupDisplayed", "true"); // Mark the popup as displayed
+    //     }
+    // }, []);
 
+    //   {showPopup && (
+    //             <div className="popup">
+    //                 <div className="popup-content">
+    //                     {/* Custom Close Button */}
+    //                     <button
+    //                         className="close-btn"
+    //                         onClick={handleClosePopup}
+    //                     >
+    //                         &times; {/* This is the "X" character for Close */}
+    //                     </button>
+
+    //                     <img src={flyerImg} alt="Badminton Tournament Flyer" />
+    //                     <div className="popup-buttons">
+    //                         <button onClick={handleViewMoreDetails}>
+    //                             View More Details
+    //                         </button>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         )}
     const handleBookNow = () => {
         swal({
             title: "SORRY",
@@ -37,39 +57,20 @@ function Home() {
         });
     };
 
-    const handleClosePopup = () => {
-        setShowPopup(false); // Close the popup
-    };
+    // const handleClosePopup = () => {
+    //     setShowPopup(false); // Close the popup
+    // };
 
-    const handleViewMoreDetails = () => {
-        window.location.href =
-            "https://www.facebook.com/people/C-S-Badminton-Complex-PVT-Ltd/61560580761181/"; // Adjust the route based on your actual page
-    };
+    // const handleViewMoreDetails = () => {
+    //     window.location.href =
+    //         "https://www.facebook.com/people/C-S-Badminton-Complex-PVT-Ltd/61560580761181/"; // Adjust the route based on your actual page
+    // };
 
     return (
         <div>
             {/* Comment out from here to line number 66 to remove popup */}
 
-            {showPopup && (
-                <div className="popup">
-                    <div className="popup-content">
-                        {/* Custom Close Button */}
-                        <button
-                            className="close-btn"
-                            onClick={handleClosePopup}
-                        >
-                            &times; {/* This is the "X" character for Close */}
-                        </button>
-
-                        <img src={flyerImg} alt="Badminton Tournament Flyer" />
-                        <div className="popup-buttons">
-                            <button onClick={handleViewMoreDetails}>
-                                View More Details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            )}
+           
 
             <section>
                 <h2 id="text">

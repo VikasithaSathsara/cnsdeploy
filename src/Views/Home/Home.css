@@ -379,6 +379,21 @@ section img#controller
   z-index: 9999; /* Ensure it appears above other content */
 }
 
+
+/*
+
+
+CSS styles of the popup starts fron here.
+So ignore these lines.
+
+
+*/
+
+
+
+
+
+
 /* Popup content box */
 .popup-content {
   background-color: white;
